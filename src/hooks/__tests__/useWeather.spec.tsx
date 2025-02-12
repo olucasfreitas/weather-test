@@ -2,13 +2,11 @@ import { describe, test, vi, expect, beforeEach, Mock } from 'vitest';
 import { renderHook, waitFor } from '@testing-library/react';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import axios from 'axios';
-import { useWeather } from '../useWeather'; // Adjust the import path as needed
+import { useWeather } from '../useWeather';
 import { useCoordinatesStore } from '@/stores/coordinatesStore';
 
-// Mock environment variable
 vi.stubEnv('VITE_OPENWEATHER_API_KEY', 'test_api_key');
 
-// Mock modules
 vi.mock('axios');
 vi.mock('@/stores/coordinatesStore', () => ({
   useCoordinatesStore: vi.fn(),

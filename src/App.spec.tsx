@@ -8,7 +8,6 @@ import { useFavorites } from './hooks/useFavorites';
 import { useCoordinatesStore } from './stores/coordinatesStore';
 import { toaster } from '@/components/ui/toaster';
 
-// Mock the custom hooks
 vi.mock('./hooks/useWeather');
 vi.mock('./hooks/useFavorites');
 vi.mock('./stores/coordinatesStore');
