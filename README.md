@@ -25,11 +25,16 @@ This project is designed to test and display weather information. It fetches dat
 
 ## Usage
 
-1. Run the application:
+1. Subscribe to the [OpenWeatherMap website](https://openweathermap.org/api/one-call-3) free plan to test this application.
+2. Create a `.env` file in the root directory of the project and add your OpenWeather API key:
+  ```plaintext
+  VITE_OPENWEATHER_KEY=your_openweather_api_key
+  ```
+3. Run the application:
   ```bash
   npm run dev
   ```
-2. Open your browser and navigate to `http://localhost:5173` to view the weather information.
+4. Open your browser and navigate to `http://localhost:5173` to view the weather information.
 
 ## License
 
