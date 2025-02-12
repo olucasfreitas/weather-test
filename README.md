@@ -27,7 +27,7 @@ This project is designed to test and display weather information. It fetches dat
 
 1. Run the application:
   ```bash
-  npm start
+  npm run dev
   ```
 2. Open your browser and navigate to `http://localhost:5173` to view the weather information.
 
